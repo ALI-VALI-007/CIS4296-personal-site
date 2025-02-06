@@ -25,7 +25,7 @@
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.3/dist/iconify-icon.min.js"></script>
 
     <!-- Remove this and fill in your name & photo in the required areas -->
-    <script>
+    <!--<script>
       fetch('https://randomuser.me/api/?inc=name,picture')
         .then((response) => response.json())
         .then(({ results }) => results[0])
@@ -37,13 +37,13 @@
           document.title = `${name.first} ${name.last} Personal Site`
           document.querySelector('#profilepic').src = picture.large
         })
-    </script>
+    </script> ---->
 
     <link href="styles/theme.css" rel="stylesheet" />
     <link href="styles/styles.css" rel="stylesheet" />
 
     <!-- Set Page Title Here -->
-    <title></title>
+    <title>Ali Vali Page</title>
   </head>
 
   <body>
@@ -99,13 +99,14 @@
           class="rounded-circle"
           draggable="false"
           id="profilepic"
+          src="/images/khabib.jpg"
         />
       </div>
       <div class="row mx-auto">
         <h4 class="h1 font-weight-bold mx-auto text-center">
           <!-- Set Name Here -->
           Hi <iconify-icon icon="twemoji:waving-hand"></iconify-icon> I'm
-          <span id="name"></span>!
+          <span id="name">Ali Vali</span>!
         </h4>
       </div>
       <div class="row mx-auto">
@@ -113,7 +114,7 @@
           Information Science & Technology Student at Temple University
         </h5>
       </div>
-      <div class="row my-4 language-wrapper row-gap-5 col-gap-1 gap-lg-2">
+      <!-- <div class="row my-4 language-wrapper row-gap-5 col-gap-1 gap-lg-2">
         <div class="col text-center">
           <img
             src="images/python.jpg"
@@ -392,8 +393,61 @@
         </div>
       </div>
     </div>
+      -->
+      <div class="container mt-5">
+        <h3>C</h3>
+      <div class="progress mb-3">
+        <div class="progress-bar" style="width: 80%" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
 
-    <script>
+      <h3>Java</h3>
+      <div class="progress mb-3">
+        <div class="progress-bar" style="width: 50%" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+
+      <h3>Javascript</h3>
+      <div class="progress mb-3">
+        <div class="progress-bar" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      </div>
+      <div class="alert alert-primary mb-5" role="alert">
+        Check out my github <a href=https://github.com/ALI-VALI-007>here</a>
+      </div>
+      <div class="container mt-5">
+
+
+
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Fun Fact #1
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+                I review restaurants with my friends for fun
+              </div>
+            </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                Fun Fact #2
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+                I like keyboards, I have a lot of them and indirectly ended up collecting them
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <!--<script>
       const tooltipTriggerList = document.querySelectorAll(
         '[data-bs-toggle="tooltip"]'
       )
@@ -401,6 +455,6 @@
         (tooltipTriggerEl) =>
           new bootstrap.Tooltip(tooltipTriggerEl, { delay: { hide: 50 } })
       )
-    </script>
+    </script>-->
   </body>
 </html>
